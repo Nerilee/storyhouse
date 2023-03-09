@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryHouse Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./imgs/favicon.ico">
+
+    
+    <style>
+
+        
+        @keyframes animate {
+            0% {
+                background-position: -500%;
+            }
+            100% {
+                background-position: 500%;
+            }
+            }
+
+
+        @media (max-width: 1188px){
+            #hambuger{
+                display:contents;
+            }
+            .lap-nav, .lg{
+                display:none;
+            }
+            .maintext{
+            align-items: flex-start;
+            
+        }
+
+        footer .container{
+                flex-direction: column;
+            }
+
+        }
+
+        @media (min-width: 1189px){
+            #hambuger, .dropdown{
+                display:none;
+            }
+        .ms{
+            display: none;
+        }
+    }
+
+    /* mobile */
+    @media (max-width: 600px) and (max-width: 1188px){
+
+        
+            .coop{
+            width: 50%;
+            flex-wrap: wrap;
+            }
+
+            .partner img{
+                width: 100%;
+            }
+            p,h1,h2,h3,h4,h5,h6{
+                letter-spacing: 2px;
+            }
+
+            h2{
+                font-size: 2.3rem;
+                line-height: 3.4rem;
+                margin: 10px 0;
+            }
+
+            h3{
+                font-size: 1.6rem;
+                line-height: 3rem;
+            }
+
+            h4{
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                font-weight: 300;
+            }
+
+            h5{
+                line-height: 3rem;
+                font-size: 1.2rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+            button{
+                width: 180px;
+                height: 70px;
+                border: 1px solid black;
+                border-radius: 50px;
+                margin: 30px 0 20px 0;
+            }
+            .servicebox{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            }
+            .service{
+            width: 50%;
+            }
+
+            #company .row, #inquery .row, #videogripher .row{
+                flex-wrap: wrap;
+            }
+
+            /* #works{
+            height: 200vh;
+            } */
+            /* display click drop down */
+
+            .brandstory1, .brandstory2, .work-img{
+                margin: 0;
+                width: 100%;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            .videobox{
+            width: 90%;
+            text-align: right;
+              }
+
+            video{
+                width: 100%;
+            }
+
+            .dis p{
+                display: none;
+            }
+            #works{
+            height: 200%;
+            } 
+            /* contact */
+                .formbox{
+                    width:100%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                form{
+                    width: 100%;
+                    margin: 20px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+                }
+
+                legend{
+                    border-radius: 5px;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .st{
+                    width:80%;
+                    margin: 5px 20px;
+                    padding-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+                textarea, input, select{
+                line-height:1.5rem;
+                padding: 2px;
+                }
+
+                label{
+                    margin-bottom: 5px;
+                }
+
+                .fbrand{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .logo-w{
+                height: 3vh;
+                }
+
+                .fbrand .logo-p{
+                    height: 10vh;
+                    margin-bottom: 10px;
+                }
+                .ft-items{
+                                    height: 50vh;
+                                }
+                footer{
+                    height: 100vh;
+                }
+
+                #contact h4{
+                    display: none;
+                }
+                .work-img{
+                    height: 35vh;
+                }
+                .work-img h3{
+                    font-size: 1.2rem;
+                }
+
+
+                    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container space-between">
+            <div class="head-brand">
+                <div class="logobox">
+                    <img src="./imgs/logo.png" alt="" class="logo logo-p">   
+                </div>
+                <div class="logobox">
+                    <img src="./imgs/word.png" alt="" class="logo logo-w">   
+                </div>
+                <!-- <h1 class="brandh1">STORYHOUSE</h1>   -->
+            </div>
+            <i class="fa-solid fa-bars" id="hambuger"></i>
+            
+            <nav>
+                
+                    <ul class="lap-nav">
+                        <li><a href="#company">ABOUT</a></li>
+                        <li><a href="#introWork">WORKS</a></li>
+                        <li><a href="#service">SERVICE</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <ul class="dropdown">
+        <li><a href="#company">ABOUT</a></li>
+        <li><a href="#introWork">WORKS</a></li>
+        <li><a href="#service">SERVICE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <section id="herosection">
+        <div class="maintext">
+            <h2>STORYHOUSE MEDIA</h2>
+            <h3>Pauline Gonzalvo</h3>
+        </div>
+        </div>
+        <div class="main">
+            <video class="lg" src="./media/HERO SECTION_laptop.mov" controls autoplay muted loop></video>
+            <!-- <img src="./imgs/main-s.jpg" alt="" class="main ms"> -->
+            <video class="ms" src="./media/HERO SECTION_mobile414x896.mov" controls autoplay muted loop ></video>
+        </div>
+    </section>
+
+    <!-- companyintro -->
+    <section id="company">
+        <div class="container">
+            <div class="row">
+                <div class="brandpics">
+                    <img src="./imgs/brandpics.png" alt="">
+                </div>
+                <div class="brandstory1">
+                    <h2 class="i">“Where stories are born…”</h2>
+                    <p>Stories are powerful. They engage our emotions, change our minds and encourage action. But the way we tell stories also matter. </p>
+                    <br>
+                    <p class="bold">Storyhouse Media is all about telling your story through creative and compelling visuals—this house is where stories are born. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- inquery -->
+<section id="inquery">
+    <div class="container">
+        <div class="row">
+            <div class="brandstory2">
+                <h2 class="i">“Passionate about telling your story…”</h2>
+                    <p>Whether it is to preserve your most precious life moments, capture your live events, or build awareness for your brand and campaign, this house got you covered.</p>
+                    <br>
+                    <p class="bold">No matter who you are or what you need, Storyhouse Media is passionate about telling your story.</p>
+            </div>
+                <a href="#contact" >
+                    <button class="inquery">Inquiries</button>
+                </a>
+        </div>
+    </div>
+</section>
+
+<!-- videogripher -->
+    <section id="videogripher">
+        <div class="container">
+            <div class="row">
+                <div class="brandpics">
+                    <img src="./imgs/artist.png" alt="">
+                </div>
+                <div class="brandstory1">
+                    <h2>Meet Pauline</h2>
+                    <p>My name is Pauline, currently based in Taipei, Taiwan. As a storyteller, I love how light, color and sound could be woven together to freeze a second in time or paint moving pictures that inspire others. </p>
+                    <br>
+                    <p class="showmore">As a video journalist and educator, I’m fascinated by the life stories that people share, and I’m always willing to lend an ear (as well as a camera). I will laugh with you, cry with you, celebrate with you, as we capture moments together. </p>
+                    <div id="showmore">Show More</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- introworks -->
+    <section id="introWork"> 
+        <div class="introwork-effect">
+            FEATURED WORKS 
+        </div>
+    </section>
+
+<!-- works -->
+    <section id="works">
+        <div class="container">
+
+            <div class="work-img">
+                <div class="video" hidden src="./media/TECO Scholar_Hector Genesis Salatan.mp4"></div>
+                <div class="dis">
+                    <h3>#TaiwanScholar in Taiwan</h3>
+                    <p>Part of a social media campaign promoting Taiwan as an education hub, this video was made in cooperation with the Taiwan Economic and Cultural Office in the Philippines.</p>
+                </div> 
+            </div>
+            <div class="work-img">
+                <div class="video" hidden src="./media/Bobbers+Amy_Mucho Villa Engagement.mov"></div>
+                <div class="dis">
+                    <h3>Bobbers + Amy Engagement</h3>
+                    <p>A glimpse into Bob and Amy’s love story, this video starts with behind the scenes preparation and ends with the question, “Will you marry me?” Filmed at Yilan’s Mucho Villa.</p>
+                </div> 
+            </div>
+            <div class="work-img">
+                <div class="video" hidden src="./media/SG55_FIN.mp4"></div>
+                <div class="dis">
+                    <h3>Singapore’s 55th National Day in Taiwan</h3>
+                    <p>In cooperation with Singaporeans Together, Stronger in Taiwan, these are the highlights from their celebration of Singapore’s 55th National Day at Shangri-La’s Far Eastern Plaza Hotel. </p>
+                </div> 
+            </div>
+            <div class="work-img">
+                <div class="video" hidden src="./media/Here in the Presence - Elevation Worship (Cover by Faye Liu 劉蜚聲).mp4"></div>
+                <div class="dis">
+                    <h3>Here in the Presence </h3>
+                    <p>Filmed mainly at Daan Park and featuring some iconic images of Taipei City, this is a music video of a song cover by artist Faye Liu. Song originally written by Elevation Worship.</p>
+                </div> 
+            </div>
+        </div>
+        <div class="lightbox hide">
+            <div class="videobox hide">
+                <i class="fa-sharp fa-regular fa-circle-xmark close-box"></i>
+                <video class="teco" src="" controls muted autoplay></video>
+            </div>
+        </div>
+    </section>
+    <section id="cooperation">
+        <div class="container column">
+            <h2> PARTNERSHIPS</h2>
+            <div class="partner row">
+                    <div class="coop"><img src="./imgs/pn-1-BOLI.png" alt=""></div>
+                    <div class="coop"><img src="./imgs/pn-2-MuchoVilla.png" alt=""></div>
+                    <div class="coop"><img src="./imgs/pn-3-TECO PH.png" alt=""></div>
+                    <div class="coop"><img src="./imgs/pn-8-NCCU_white.png" alt=""></div>    
+                    <div class="coop"><img src="./imgs/pn-5-SG Global Network.png" alt=""></div>
+                    <div class="coop"><img src="./imgs/pn-6-RUAH.png" alt=""></div>
+                    <div class="coop"><img src="./imgs/pn-7.JPG" alt=""></div>
+                    <div class="coop"><img src="./imgs/pn-4-CZ_TW.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section id="service">
+        <div class="container column">
+            <h2>SERVICES AVAILABLE
+            </h2>
+            <h4>Looking forward to telling your story! </h4>
+            <div class="servicebox">
+                <div class="service">
+                    <i class="fa-solid fa-camera"></i>
+                    <h5>Photography</h5>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-video"></i>
+                    <h5>Videography</h5>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-film"></i>
+                    <h5>Editing</h5>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <h5>FilmMaking</h5>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h5>Training</h5>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container column">
+            <h2>LET’S GET CONNECTED</h2>
+            <h4>Want to learn more about how I can tell your story? Fill out my contact form below and I’ll get back to you asap.</h4>
+                <form action="">
+                        <div class="formbox">
+                        <div class="left">
+                        <div class="st">
+                            <label for="" class="">Company Name:</label>
+                            <input type="text" maxlength="10" placeholder="If applicable">
+                        </div>
+                        <div class="st">
+                            <label for="" class="">Full Name:</label>
+                            <input type="text" maxlength="20" placeholder="Full Name">
+                        </div>
+                        <div class="st">
+                            <label for="" class="">Email:</label>
+                            <input type="email" placeholder="xxx@gmail.com">
+                        </div>
+                        <div class="st">
+                            <label for="">How did you hear about Storyhouse Media?</label>
+                            <div class="checkbox">
+                                <input type="checkbox" name="sourse" id="" value="FB">Facebook
+                                <input type="checkbox" name="sourse" id="" value="IG">Instagram
+                                <input type="checkbox" name="sourse" id="" value="YT">Youtube <br>
+                                <input type="checkbox" name="sourse" id="" value="PP">Recommended by Friends 
+                                <input type="checkbox" name="sourse" id="" value="OTHERS">Others
+                            </div>
+                        </div>
+                        </div>
+                        <div class="right">
+                        <div class="st">
+                            <label for="" class="">Desired Project Start Date:</label>
+                            <input type="date">
+                        </div>
+                        <div class="st">
+                            <label for="" class="">Estimated Budget:</label>
+                            <input type="text" maxlength="8" placeholder="in NTD">
+                        </div>
+
+                        <div class="st">
+                            <label for="videotype">Service Needed:</label>
+                            <select id="videotype" name="videotype">
+                              <option value="videography">Videography</option>
+                              <option value="Photography">Photography</option>
+                              <option value="FilmMaking">FilmMaking</option>
+                              <option value="Editing">Editing</option>
+                              <option value="Trainning">Trainning</option>
+                              <option value="Trainning">Other</option>
+
+                            </select>
+                        </div>
+
+                        <div class="st">
+                            <label for="" class="">Feel free to share more about your story / project, or any queries:<br></label>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="What is your story about?">
+                            </textarea>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="st">
+                            <div class="btn">
+                            <input type="reset" value="Clear">
+                            <input type="submit" value="Send">
+                            </div>
+                        </div>
+                </form>
+        </div>
+    
+    </section>
+
+    <footer>
+        <div class="container space-between ft-items">
+                <div class="fbrand">
+                    <div class="">
+                        <img src="./imgs/logo.png" alt="" class="logo logo-p">
+                    </div>
+                    <img src="./imgs/word.png" alt="" class="logo logo-w">         
+                </div>
+
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <div class="contactinfo">
+                    <p>E-mail: storyhouse@gmail.com</p>
+                    <p>Mobile: 0981-234-568</p>
+                    <p>lineID: shmedia</p>
+                </div>
+
+                
+        </div>
+    </footer>
+    <div id="top"><i class="fa-solid fa-chevron-up"></i></div>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"
+        ></script>
+
+    <script>
+
+        // bgc changing
+        // console.log('body height:', $('body').height());
+
+        $(window).scroll(function () {
+            const nowScroll = $(window).scrollTop();
+            const bodyHeight = $('body').height();
+            const windowHeight = $(window).height();
+
+            // console.log('windowHeight', windowHeight);
+            // console.log('nowScroll', nowScroll);
+            const percentage = Math.ceil((nowScroll / (bodyHeight - windowHeight)) * 100);
+            
+            // console.log('percentage', percentage);
+
+            // $('.box').css('width', `${percentage}%`);
+
+            if (percentage < 43){
+                $('body').css('background','white')
+                $('body').css('color','black')
+                $('#top').css('color','white').css('background-color','black')
+            }
+            else if(percentage >=43, percentage<74){
+                $('body').css('background','black')
+                $('body').css('color','white')
+                $('#top').css('color','black').css('background-color','white')
+            }
+            else if(percentage >=74){
+                $('body').css('background','white')
+                $('body').css('color','black').css('background-color','white')
+                $('#top').css('color','white').css('background-color','black')
+            }
+        })
+
+    
+        // navlist
+        $(function () {
+            $('#hambuger').click(function (e) {
+                e.preventDefault();
+                $('#hambuger').toggleClass('active');
+                $('.dropdown').slideToggle();
+            });
+
+        });
+
+        // showmore
+        $(function () {
+            $('#showmore').click(function (e) {
+                e.preventDefault();
+                $('#showmore').toggleClass('active');
+                $('.showmore').slideToggle();
+
+                if($("#showmore").hasClass("active")) {
+                 $('#showmore').text("Show Less");
+                } 
+                
+                else {
+                    $('#showmore').text("Show More");
+                }
+            });
+
+        });
+
+        //lightbox
+        $('.work-img').click(function (e) {
+            const nowPlay = $(e.target).children().first().attr('src');
+            $('.lightbox').removeClass('hide')
+            $('.videobox').removeClass('hide')
+            $('.videobox video').attr('src' , nowPlay)
+        })
+
+        $('.close-box').click(function(){
+            $('.lightbox').addClass('hide')
+        })
+
+        // growlarge
+        $('.work-img').mouseenter(function(e){
+            $(e.target).css('background-size','110%')
+        })
+        $('.work-img').mouseleave(function(e){
+            $(e.target).css('background-size','100%')
+        })
+
+        // go top
+        $('#top').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 2000)
+        })
+
+        // showup
+        $(window).scroll(function () {
+            const nowScroll = $(window).scrollTop();
+            const OffsetTop = $('.brandstory2').offset().top;
+            const widowHeight = $(window).height();
+
+            if (nowScroll >= (OffsetTop - widowHeight * 2 / 3)) {
+                $('.brandstory2').addClass('show')
+            }
+            else {
+                $('.brandstory2').removeClass('show')
+            }
+        })
+
+    </script>
+</body>
+
+</html>
